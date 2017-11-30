@@ -24,7 +24,7 @@ During the time of development, Discord decided to update the UI meaning that on
   - Custom prefixes for Artist display
   - Custom prefix for hover on large image
   - Custom text for main presence state (I'm listening to...)
-  - Find a way to correctly handle songName returning null (haven't looked into it properly)
+  - Find a way to correctly handle ```status.Track.TrackResource.Name``` returning null (haven't looked into it properly)
   
 
 
@@ -33,6 +33,16 @@ During the time of development, Discord decided to update the UI meaning that on
   - [SpotifyLocalAPI](https://github.com/JohnnyCrazy/SpotifyAPI-NET)
   - [MahApps.Metro](mahapps.com)
   - [Json.NET](https://www.newtonsoft.com/json)
+
+### How to build the project
+  - Install the third party libraries listed above (reccomended from NuGet),  and ensure that all are fully updated
+  - Download the [Discord RPC DLL](https://github.com/discordapp/discord-rpc) and ensure it's in the ```bin``` folder
+  - F5
+
+
+
+
+
 
 
 ### Development
