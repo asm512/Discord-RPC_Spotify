@@ -47,6 +47,6 @@ During the time of development, Discord decided to update the UI meaning that on
 
 ### Development
 
-Feel free to fork the project and file any merges if you think people would appreciate them! : ) 
+Feel free to fork the project and file any merges if you think people would appreciate them! : ) P.S. Don't forget to leave a star!
 
 MIT
