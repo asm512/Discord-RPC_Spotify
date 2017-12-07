@@ -1,6 +1,6 @@
 # Discord-RPC_Spotify
 
-## Block Spotify Adverts before using this otherwise it'll throw a null exception!
+#### Block Spotify Adverts before using this otherwise it'll throw a null exception!
 
 Discord-RPC_Spotify is a program which, with help from the [Spotify Local API Library](https://github.com/JohnnyCrazy/SpotifyAPI-NET), exposes Spotify's current play status and displays it via Discord Rich Presence.
 
