@@ -1,11 +1,15 @@
 # Discord-RPC_Spotify
+![alt text](https://github.com/peaches6/Discord-RPC_Spotify/blob/master/media/ui.png?raw=true "Old layout playing song")
+
+###Changelog:
+*16/01/18 - Refactor entire codebase and basically rewrite plugin from scratch ([#f5e4af6](https://github.com/peaches6/Discord-RPC_Spotify/commit/f5e4af66c5685fc459bdebf9e57ee948e452aaa4))
 
 
 Discord-RPC_Spotify is a plugin which, with help from the [Spotify Local API Library](https://github.com/JohnnyCrazy/SpotifyAPI-NET), exposes Spotify's current play status and displays it via Discord Rich Presence.
 
 During the time of development, Discord decided to update the UI meaning that on single click on a user's name you won't be able to see the entire song, or most of it rather, but right click > profile will still yield the full information.
 
-##### Kind if important note : the Discord API limits requests at intervals less than 15 seconds, meaning that at certain points the current display may be outdated.
+##### Kind of important note : the Discord API limits requests at intervals less than 15 seconds, meaning that at certain points the current display may be outdated.
 
 
 ### Old Discord Layout (Pre 30th November 2017)
