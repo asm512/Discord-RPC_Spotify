@@ -1,0 +1,15 @@
+\\hudson\home\2017\17FL1577\Projects\SpotifyRichPresence\SpotifyRichPresence\obj\Debug\SpotifyRichPresence.csprojResolveAssemblyReference.cache
+\\hudson\home\2017\17FL1577\Projects\SpotifyRichPresence\SpotifyRichPresence\obj\Debug\MainWindow.g.cs
+\\hudson\home\2017\17FL1577\Projects\SpotifyRichPresence\SpotifyRichPresence\obj\Debug\App.g.cs
+\\hudson\home\2017\17FL1577\Projects\SpotifyRichPresence\SpotifyRichPresence\obj\Debug\MainWindow.baml
+\\hudson\home\2017\17FL1577\Projects\SpotifyRichPresence\SpotifyRichPresence\obj\Debug\SpotifyRichPresence.Properties.Resources.resources
+\\hudson\home\2017\17FL1577\Projects\SpotifyRichPresence\SpotifyRichPresence\obj\Debug\SpotifyRichPresence.csproj.GenerateResource.Cache
+\\hudson\home\2017\17FL1577\Projects\SpotifyRichPresence\SpotifyRichPresence\obj\Debug\SpotifyRichPresence.csproj.CoreCompileInputs.cache
+\\hudson\home\2017\17FL1577\Projects\SpotifyRichPresence\SpotifyRichPresence\obj\Debug\RichPresence_Spotify_MarkupCompile.cache
+\\hudson\home\2017\17FL1577\Projects\SpotifyRichPresence\SpotifyRichPresence\obj\Debug\RichPresence_Spotify_MarkupCompile.lref
+\\hudson\home\2017\17FL1577\Projects\SpotifyRichPresence\SpotifyRichPresence\obj\Debug\RichPresence_Spotify.g.resources
+\\hudson\home\2017\17FL1577\Projects\SpotifyRichPresence\SpotifyRichPresence\obj\Debug\RichPresence_Spotify.pdb
+\\hudson\home\2017\17FL1577\Projects\SpotifyRichPresence\SpotifyRichPresence\bin\Debug\RichPresence_Spotify.exe.config
+\\hudson\home\2017\17FL1577\Projects\SpotifyRichPresence\SpotifyRichPresence\bin\Debug\RichPresence_Spotify.exe
+\\hudson\home\2017\17FL1577\Projects\SpotifyRichPresence\SpotifyRichPresence\bin\Debug\RichPresence_Spotify.pdb
+\\hudson\home\2017\17FL1577\Projects\SpotifyRichPresence\SpotifyRichPresence\obj\Debug\RichPresence_Spotify.exe
