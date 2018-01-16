@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace RichPresence_Spotify
+namespace SpotifyRichPresence
 {
     /// <summary>
     /// Interaction logic for App.xaml

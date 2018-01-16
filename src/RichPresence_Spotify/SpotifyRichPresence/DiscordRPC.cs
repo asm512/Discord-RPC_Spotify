@@ -1,27 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.InteropServices;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using SpotifyAPI.Local;
-using SpotifyAPI.Local.Enums;
-using SpotifyAPI.Local.Models;
 
-namespace RichPresence_Spotify
+namespace SpotifyRichPresence
 {
-    using System.Runtime.InteropServices;
-
-    internal class DiscordRPC
+    public class DiscordRPC
     {
+        [DllImport("discord-rpc", EntryPoint = "Discord_Initialize", CallingConvention = CallingConvention.Cdecl)]
+        public static extern void Initialize(string applicationId, ref EventHandlers handlers, bool autoRegister, string optionalSteamId);
+
+        [DllImport("discord-rpc", EntryPoint = "Discord_Shutdown", CallingConvention = CallingConvention.Cdecl)]
+        public static extern void Shutdown();
+
+        [DllImport("discord-rpc", EntryPoint = "Discord_RunCallbacks", CallingConvention = CallingConvention.Cdecl)]
+        public static extern void RunCallbacks();
+
+        [DllImport("discord-rpc", EntryPoint = "Discord_UpdatePresence", CallingConvention = CallingConvention.Cdecl)]
+        public static extern void UpdatePresence(ref RichPresence presence);
+
+        [DllImport("discord-rpc", EntryPoint = "Discord_Respond", CallingConvention = CallingConvention.Cdecl)]
+        public static extern void Respond(string userId, Reply reply);
+
         [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
         public delegate void ReadyCallback();
 
@@ -40,17 +42,6 @@ namespace RichPresence_Spotify
         [UnmanagedFunctionPointer(CallingConvention.Cdecl)]
         public delegate void RequestCallback(JoinRequest request);
 
-        public struct EventHandlers
-        {
-            public ReadyCallback readyCallback;
-            public DisconnectedCallback disconnectedCallback;
-            public ErrorCallback errorCallback;
-            public JoinCallback joinCallback;
-            public SpectateCallback spectateCallback;
-            public RequestCallback requestCallback;
-        }
-
-        [System.Serializable]
         public struct RichPresence
         {
             public string state; /* max 128 bytes */
@@ -70,6 +61,16 @@ namespace RichPresence_Spotify
             public bool instance;
         }
 
+        public struct EventHandlers
+        {
+            public ReadyCallback readyCallback;
+            public DisconnectedCallback disconnectedCallback;
+            public ErrorCallback errorCallback;
+            public JoinCallback joinCallback;
+            public SpectateCallback spectateCallback;
+            public RequestCallback requestCallback;
+        }
+
         [Serializable]
         public struct JoinRequest
         {
@@ -84,21 +85,5 @@ namespace RichPresence_Spotify
             Yes = 1,
             Ignore = 2
         }
-
-        [DllImport("discord-rpc", EntryPoint = "Discord_Initialize", CallingConvention = CallingConvention.Cdecl)]
-        public static extern void Initialize(string applicationId, ref EventHandlers handlers, bool autoRegister, string optionalSteamId);
-
-        [DllImport("discord-rpc", EntryPoint = "Discord_Shutdown", CallingConvention = CallingConvention.Cdecl)]
-        public static extern void Shutdown();
-
-        [DllImport("discord-rpc", EntryPoint = "Discord_RunCallbacks", CallingConvention = CallingConvention.Cdecl)]
-        public static extern void RunCallbacks();
-
-        [DllImport("discord-rpc", EntryPoint = "Discord_UpdatePresence", CallingConvention = CallingConvention.Cdecl)]
-        public static extern void UpdatePresence(ref RichPresence presence);
-
-        [DllImport("discord-rpc", EntryPoint = "Discord_Respond", CallingConvention = CallingConvention.Cdecl)]
-        public static extern void Respond(string userId, Reply reply);
     }
-
 }
