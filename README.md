@@ -1,7 +1,7 @@
 # Discord-RPC_Spotify
 ![alt text](https://github.com/peaches6/Discord-RPC_Spotify/blob/master/media/ui.PNG?raw=true "Old layout playing song")
 
-###Changelog:
+### Changelog:
 *16/01/18 - Refactor entire codebase and basically rewrite plugin from scratch ([#f5e4af6](https://github.com/peaches6/Discord-RPC_Spotify/commit/f5e4af66c5685fc459bdebf9e57ee948e452aaa4))
 
 
