@@ -60,7 +60,9 @@ namespace SpotifyRichPresence
             {
                 e.Cancel = true;
                 MinimizetoTaskbar();
+                return;
             }
+            DiscordRPC.Shutdown();
         }
 
         private void FixWidth(int width = 600, int height = 400)
@@ -160,6 +162,29 @@ namespace SpotifyRichPresence
             RichPresenceSpotify richPresenceSpotify = new RichPresenceSpotify();
             richPresenceSpotify.InitializeDiscordRichPresence();
             AddLogItem("Starting RPC plugin", LogType.Message);
+        }
+
+        private void runSpotify_Click(object sender, RoutedEventArgs e)
+        {
+            SpotifyLocalAPI.RunSpotify();
+            AddLogItem("Spotify started", LogType.Message);
+        }
+
+        private void runWebhelper_Click(object sender, RoutedEventArgs e)
+        {
+            SpotifyLocalAPI.RunSpotifyWebHelper();
+            AddLogItem("Spotify Webhelper started", LogType.Message);
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            DiscordRPC.Shutdown();
+            StartRichPresence();
+        }
+
+        private void shutdownRichPresence_Click(object sender, RoutedEventArgs e)
+        {
+            DiscordRPC.Shutdown();
         }
     }
 }
