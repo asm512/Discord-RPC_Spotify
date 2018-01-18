@@ -16,7 +16,7 @@
             <Button x:Name="runSpotify" Margin="10" FontWeight="DemiBold" FontFamily="Segoe UI Symbol" Click="runSpotify_Click">Run Spotify</Button>
             <Button x:Name="runWebhelper" Margin="10" FontWeight="DemiBold" FontFamily="Segoe UI Symbol" Click="runWebhelper_Click">Run Spotify Local Server</Button>
             <Button Margin="10" FontWeight="DemiBold" FontFamily="Segoe UI Symbol" Click="Button_Click">Restart RichPresence</Button>
-            <Button Margin="10" FontWeight="DemiBold" FontFamily="Segoe UI Symbol">Shutdown RichPresence</Button>
+            <Button x:Name="shutdownRichPresence" Margin="10" FontWeight="DemiBold" FontFamily="Segoe UI Symbol" Click="shutdownRichPresence_Click">Shutdown RichPresence</Button>
         </StackPanel>
         <StackPanel Grid.Column="1">
             <TextBlock TextAlignment="Center" Margin="5" FontWeight="DemiBold" FontFamily="Segoe UI Symbol" FontSize="15">LOGS</TextBlock>
