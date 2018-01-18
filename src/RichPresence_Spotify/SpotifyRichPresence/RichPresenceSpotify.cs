@@ -42,6 +42,21 @@ namespace SpotifyRichPresence
         internal void UpdateRPC()
         {
             status = _spotify.GetStatus();
+            string trackName;
+            string artistName;
+
+            try
+            {
+                trackName = status.Track.TrackResource.Name;
+                artistName = status.Track.ArtistResource.Name;
+            }
+            //Most likely an Ad
+            catch (Exception)
+            {
+                trackName = "Advert";
+                artistName = "";
+            }
+
 
             if (status.Track.TrackResource.Name != null && !status.Track.IsAd())
             {
