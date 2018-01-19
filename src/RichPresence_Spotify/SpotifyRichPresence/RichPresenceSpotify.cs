@@ -60,7 +60,7 @@ namespace SpotifyRichPresence
 
             if (status.Track.TrackResource.Name != null && !status.Track.IsAd())
             {
-                Presence.state = "🎵 " + status.Track.TrackResource.Name;
+                Presence.state = "🎵 " + trackName;
                 if (status.Playing)
                 {
                     Presence.smallImageKey = "play";
