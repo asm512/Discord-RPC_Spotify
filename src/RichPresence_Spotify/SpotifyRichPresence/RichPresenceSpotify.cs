@@ -60,7 +60,7 @@ namespace SpotifyRichPresence
 
             if (status.Track.TrackResource.Name != null && !status.Track.IsAd())
             {
-                Presence.state = status.Track.TrackResource.Name + " by " + status.Track.ArtistResource.Name;
+                Presence.state = "🎵 " + status.Track.TrackResource.Name;
                 if (status.Playing)
                 {
                     Presence.smallImageKey = "play";
@@ -73,7 +73,7 @@ namespace SpotifyRichPresence
                     Presence.smallImageText = "Paused";
                     Presence.startTimestamp = 0;
                 }
-                Presence.details =  status.Track.AlbumResource.Name;
+                Presence.details = "💽" + artistName;
                 DiscordRPC.UpdatePresence(ref Presence);
             }
         }
